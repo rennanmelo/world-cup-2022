@@ -1,0 +1,19 @@
+.header {
+  transition: all 300ms ease-in;
+}
+
+.header__logo {
+  flex-grow: 1;
+}
+
+.header__logo h1 {
+  font-family: "Righteous", cursive;
+  margin: 0 0 5px;
+  font-size: 34px;
+}
+
+.header__logo h2 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 16px;
+}
