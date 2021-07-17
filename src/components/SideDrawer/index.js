@@ -1,6 +1,8 @@
 import React from "react";
-import { Drawer, List, ListItem } from "@material-ui/core";
+import { Drawer, List, ListItem, makeStyles } from "@material-ui/core";
 import { scroller } from "react-scroll";
+
+import "./index.css";
 
 const SideDrawer = (props) => {
   const links = [
@@ -10,6 +12,15 @@ const SideDrawer = (props) => {
     { where: "pricing", value: "Pricing" },
     { where: "location", value: "Location" },
   ];
+
+  const useStyles = makeStyles((theme) => ({
+    paperAnchorRight: {
+      backgroundColor: "#5F0A21",
+      color: "#FFFFFF",
+    },
+  }));
+
+  const classes = useStyles();
 
   const scrollToElement = (element) => {
     scroller.scrollTo(element, {
@@ -27,14 +38,21 @@ const SideDrawer = (props) => {
         button
         key={link.where}
         onClick={() => scrollToElement(link.where)}
+        className="drawer__item"
       >
-        {link.value}
+        <span>{link.value}</span>
       </ListItem>
     ));
 
   return (
-    <Drawer anchor="right" open={props.open} onClose={props.onClose}>
-      <List>{renderItems()}</List>
+    <Drawer
+      anchor="right"
+      open={props.open}
+      onClose={props.onClose}
+      classes={{ paperAnchorRight: classes.paperAnchorRight }}
+      className="drawer"
+    >
+      <List className="drawer__list">{renderItems()}</List>
     </Drawer>
   );
 };
