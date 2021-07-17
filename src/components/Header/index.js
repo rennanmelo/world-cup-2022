@@ -10,12 +10,13 @@ const Header = () => {
   const [headerTransparent, setHeaderTransparent] = useState(true);
 
   const useStyles = makeStyles((theme) => ({
-    header: {
-      backgroundColor: headerTransparent ? "transparent" : "#2f2f2f",
+    root: {
+      background: headerTransparent
+        ? "transparent"
+        : "linear-gradient(62deg,#0F020C 0,#320615 18%,#5F0A21 44%,#800D2A 67%,#940F2F 86%,#9B1031 99%,#9B1031 100%,#9B1031 100%) no-repeat padding-box",
       boxShadow: "none",
       padding: "8px 0",
       flexGrow: 1,
-      transition: "background 0.5s",
     },
   }));
 
@@ -38,7 +39,11 @@ const Header = () => {
   }, []);
 
   return (
-    <AppBar position="fixed" className={`${classes.header} header`}>
+    <AppBar
+      position="fixed"
+      className="header"
+      classes={{ root: classes.root }}
+    >
       <Toolbar>
         <div className="header__logo">
           <h1>Qatar 2022</h1>
