@@ -8,6 +8,7 @@
   font-size: 30px;
   display: block;
   text-align: center;
+  font-family: "Righteous", cursive;
 }
 
 .drawer .drawer__item:hover {
