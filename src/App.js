@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         id="location"
         style={{ backgroundColor: "pink", height: "500px" }}
       ></div>
+      <Footer />
     </div>
   );
 };
