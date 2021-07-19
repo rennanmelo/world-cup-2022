@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Featured from "./components/Featured";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <div
-        id="featured"
-        style={{ backgroundColor: "blue", height: "500px" }}
-      ></div>
+      <>
+        <Featured />
+      </>
       <div
         id="eventinfo"
         style={{ backgroundColor: "red", height: "500px" }}
