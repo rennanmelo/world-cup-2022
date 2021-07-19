@@ -12,7 +12,7 @@ const Header = () => {
   const useStyles = makeStyles((theme) => ({
     root: {
       background: headerTransparent
-        ? "transparent"
+        ? "rgba(0,0,0,0.05)"
         : "linear-gradient(62deg,#0F020C 0,#320615 18%,#5F0A21 44%,#800D2A 67%,#940F2F 86%,#9B1031 99%,#9B1031 100%,#9B1031 100%) no-repeat padding-box",
       boxShadow: "none",
       padding: "8px 0",
