@@ -2,27 +2,21 @@ import React from "react";
 import { Slide } from "react-awesome-reveal";
 
 const Countdown = () => {
+  const renderItem = (time, tag) => (
+    <div className="countdown__item">
+      <div className="countdown__time">{time}</div>
+      <div className="countdown__tag">{tag}</div>
+    </div>
+  );
   return (
     <Slide>
       <div className="countdown">
         <div className="countdown__top">Event starts in</div>
         <div className="countdown__bottom">
-          <div className="countdown__item">
-            <div className="countdown__time">27</div>
-            <div className="countdown__tag">days</div>
-          </div>
-          <div className="countdown__item">
-            <div className="countdown__time">27</div>
-            <div className="countdown__tag">hs</div>
-          </div>
-          <div className="countdown__item">
-            <div className="countdown__time">27</div>
-            <div className="countdown__tag">min</div>
-          </div>
-          <div className="countdown__item">
-            <div className="countdown__time">27</div>
-            <div className="countdown__tag">sec</div>
-          </div>
+          {renderItem(24, "days")}
+          {renderItem(24, "hs")}
+          {renderItem(24, "min")}
+          {renderItem(24, "sec")}
         </div>
       </div>
     </Slide>
