@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 
 const Featured = () => {
   return (
-    <div className="featured_container">
+    <div className="featured">
       <Carousel />
     </div>
   );

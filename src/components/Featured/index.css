@@ -1,3 +1,7 @@
+.featured {
+  position: relative;
+}
+
 .carousel__image {
   background-position: center;
   background-repeat: no-repeat;
