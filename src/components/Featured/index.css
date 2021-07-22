@@ -39,6 +39,10 @@
   border: none;
 }
 
+.countdown__item {
+  text-align: center;
+}
+
 .countdown__item:not(:last-child) {
   padding-right: 20px;
 }
