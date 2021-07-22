@@ -8,3 +8,58 @@
   background-size: cover;
   max-width: 100%;
 }
+
+.countdown {
+  position: absolute;
+  bottom: 0px;
+  color: #ffffff;
+  max-width: 100%;
+}
+
+.countdown__top {
+  background: #ff4800;
+  font-size: 20px;
+  padding: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.countdown__bottom {
+  display: flex;
+  background: #d93d00;
+  padding: 10px 20px;
+}
+
+.countdown__time {
+  font-size: 30px;
+  border-right: 1px solid #f44336;
+}
+
+.countdown__item:last-child .countdown__time {
+  border: none;
+}
+
+.countdown__item {
+  text-align: center;
+}
+
+.countdown__item:not(:last-child) {
+  padding-right: 20px;
+}
+
+.countdown__tag {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .countdown__time {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .countdown__time {
+    font-size: 70px;
+  }
+}
