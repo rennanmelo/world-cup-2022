@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Featured from "./components/Featured";
+import EventInfo from "./components/EventInfo";
 
 const App = () => {
   return (
@@ -10,10 +11,9 @@ const App = () => {
       <>
         <Featured />
       </>
-      <div
-        id="eventinfo"
-        style={{ backgroundColor: "red", height: "500px" }}
-      ></div>
+      <>
+        <EventInfo />
+      </>
       <div
         id="highlights"
         style={{ backgroundColor: "green", height: "500px" }}
