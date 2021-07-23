@@ -17,7 +17,7 @@
 }
 
 .countdown__top {
-  background: #ff4800;
+  background: #e6b219;
   font-size: 20px;
   padding: 10px;
   display: inline-block;
@@ -26,13 +26,12 @@
 
 .countdown__bottom {
   display: flex;
-  background: #d93d00;
+  background: #ffbf00;
   padding: 10px 20px;
 }
 
 .countdown__time {
   font-size: 30px;
-  border-right: 1px solid #f44336;
 }
 
 .countdown__item:last-child .countdown__time {
