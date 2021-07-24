@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Featured from "./components/Featured";
 import EventInfo from "./components/EventInfo";
+import Highlights from "./components/Highlights";
 
 const App = () => {
   return (
@@ -14,10 +15,9 @@ const App = () => {
       <>
         <EventInfo />
       </>
-      <div
-        id="highlights"
-        style={{ backgroundColor: "green", height: "500px" }}
-      ></div>
+      <>
+        <Highlights />
+      </>
       <div
         id="pricing"
         style={{ backgroundColor: "orange", height: "500px" }}
