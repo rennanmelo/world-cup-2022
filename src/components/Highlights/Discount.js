@@ -3,12 +3,15 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 const Discount = () => {
   const totalPercentage = 30;
+  // Create the state variable with the default state
   const [percentage, setPercentage] = useState(0);
 
   const upPercentage = () => {
+    // Use the default prevCount variable given by useState
     setPercentage((prevCount) => prevCount + 1);
   };
 
+  // Every time the percentage value changes it will run again
   useEffect(() => {
     if (percentage > 0 && percentage < totalPercentage) {
       setTimeout(() => {
