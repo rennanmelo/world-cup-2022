@@ -1,11 +1,12 @@
 import React from "react";
+import Description from "./Description";
 
 import "./index.css";
 
 const Highlights = () => {
   return (
     <>
-      <div>Highlights</div>
+      <Description />
     </>
   );
 };
