@@ -1,0 +1,26 @@
+.description {
+  background: #5f0a21;
+  padding: 100px 10px;
+}
+
+.description__content {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.description__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 52px;
+  margin: 0 0 40px;
+}
+
+.description__text {
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 18px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 30px 0px;
+}
