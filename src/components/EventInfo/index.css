@@ -3,12 +3,12 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 170px 0px;
-  background: #e8e6d8;
+  background: #5f0a21;
   margin: 0 auto;
 }
 
 .event-info__item {
-  color: #550065;
+  color: #ffffff;
   text-align: center;
 }
 
