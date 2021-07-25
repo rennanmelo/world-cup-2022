@@ -1,5 +1,5 @@
 .description {
-  background: #5f0a21;
+  background: #e8e6d8;
   padding: 100px 15px 0;
 }
 
@@ -12,13 +12,13 @@
 .description__title {
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #550065;
   font-size: 52px;
   margin: 0 0 40px;
 }
 
 .description__text {
-  color: #ffffff;
+  color: #000000;
   line-height: 30px;
   font-size: 18px;
   border-top: 1px solid #dddddd;
@@ -27,8 +27,8 @@
 }
 
 .discount {
-  color: #ffffff;
-  background: #5f0a21;
+  color: #000000;
+  background: #e8e6d8;
   padding: 40px 15px 100px;
 }
 
@@ -55,9 +55,11 @@
 .discount__label {
   font-size: 50px;
   display: block;
+  color: #550065;
 }
 
 .discount__title {
+  color: #550065;
   font-size: 34px;
   font-weight: bold;
   margin: 0;
