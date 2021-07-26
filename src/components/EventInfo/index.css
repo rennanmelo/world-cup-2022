@@ -1,8 +1,9 @@
 .event-info {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
-  padding: 170px 0px;
+  padding: 140px 15px 70px;
   background: #5f0a21;
   margin: 0 auto;
 }
@@ -64,6 +65,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .event-info {
+    padding: 170px 15px 100px;
+    flex-direction: row;
+  }
+
   .event-info__item:first-child {
     margin-bottom: 0;
   }

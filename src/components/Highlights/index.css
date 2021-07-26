@@ -1,6 +1,6 @@
 .description {
   background: #e8e6d8;
-  padding: 100px 15px 0;
+  padding: 70px 15px 0;
 }
 
 .description__content {
@@ -29,7 +29,7 @@
 .discount {
   color: #000000;
   background: #e8e6d8;
-  padding: 40px 15px 100px;
+  padding: 40px 15px 70px;
 }
 
 .discount__content {
@@ -68,10 +68,23 @@
 .discount__text {
   line-height: 30px;
   font-size: 18px;
+  margin: 15px 0 0;
 }
 
 @media screen and (min-width: 768px) {
+  .description {
+    padding-top: 100px;
+  }
+
+  .discount {
+    padding-bottom: 100px;
+  }
+
   .discount__content {
     flex-direction: row;
+  }
+
+  .discount__percentage {
+    margin-bottom: 0;
   }
 }
