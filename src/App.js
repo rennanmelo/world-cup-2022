@@ -5,6 +5,7 @@ import Featured from "./components/Featured";
 import EventInfo from "./components/EventInfo";
 import Highlights from "./components/Highlights";
 import Pricing from "./components/Pricing";
+import Location from "./components/Location";
 
 const App = () => {
   return (
@@ -22,10 +23,9 @@ const App = () => {
       <>
         <Pricing />
       </>
-      <div
-        id="location"
-        style={{ backgroundColor: "pink", height: "500px" }}
-      ></div>
+      <>
+        <Location />
+      </>
       <Footer />
     </div>
   );
