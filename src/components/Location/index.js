@@ -9,7 +9,7 @@ const Location = () => {
         width="100%"
         height="500"
         frameBorder="0"
-        allowfullscreen
+        allowFullScreen
         loading="lazy"
         title="Qatar"
       ></iframe>
